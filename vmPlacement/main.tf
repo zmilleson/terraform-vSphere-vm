@@ -44,10 +44,3 @@ data "vsphere_datastore" "datastore" {
     name            = "${lookup(var.datastores,data.vsphere_compute_cluster.cluster.name)}"
     datacenter_id   = "${data.vsphere_datacenter.dc.id}"
 }
-
-## Set VM folder placement
-resource "vsphere_folder" "tfFolder" {
-    path            = "Terraform"
-    type            = "vm"
-    datacenter_id   = "${data.vsphere_datacenter.dc.id}"
-}

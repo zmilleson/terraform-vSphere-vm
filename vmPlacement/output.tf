@@ -9,7 +9,3 @@ output "rpID" {
 output "datastoreID" {
     value = "${data.vsphere_datastore.datastore.id}"
 }
-
-output "vmFolderID" {
-    value = "${vsphere_folder.tfFolder.id}"
-}
