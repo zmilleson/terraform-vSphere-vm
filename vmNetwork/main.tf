@@ -8,11 +8,3 @@ data "vsphere_network" "net" {
 variable "domain" {
     default = "get-vm.local"
 }
-
-/*variable "gateway" {
-    default = "192.168.1.1"
-}
-
-variable "netmask" {
-    default = 24
-}*/
